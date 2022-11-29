@@ -11,29 +11,28 @@
 </head>
 
 <body>
-  <!-- header -->
-  <header class="container m-lr">
+  <header class="container">
     <nav class="nav m-lr flex">
-      <div class="logo flex">
-        <img src="./images/Logo.png" alt="logo" height="80">
-        <a href="./index.html">Dental Studio</a>
-      </div>
-      <div class="nav-link flex">
-        <a href="./index.html">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn">Treatments</button>
-          <div class="dropdown-content">
-            <a href="./pages/treatment1.html">Dental implant</a>
-            <a href="#">Teeth whitening</a>
-            <a href="#">Root Canel</a>
-          </div>
-        </div>
-        <a href="./pages/contact.html">Contact us</a>
-      </div>
-      </div>
+      <img src="./images/Logo.png" alt="logo" height="80">
+      <ul class="nav-link flex">
+        <li><a href="./index.html">Home</a></li>
+        <li>
+          <menu class="dropdown">
+            <button class="dropbtn">Treatments</button>
+            <ul class="dropdown-content">
+              <li><a href="./pages/treatment1.html">Dental implant</a></li>
+              <li><a href="#">Teeth whitening</a></li>
+              <li><a href="#">Root Canel</a></li>
+            </ul>
+          </menu>
+        </li>
+        <li><a href="./pages/contact.html">Contact us</a></li>
+      </ul>
     </nav>
-    <section class="flex m-lr sec">
-      <div>
+  </header>
+  <main>
+    <section class="flex sec">
+      <article>
         <h1>We Care For Your <span>Dental</span> Health</h1>
         <p>We will probably instruct and teach the exceptionally imperative estimation of oral wellbeing and what every
           single
@@ -41,62 +40,60 @@
           great
           dentistry in a minding and delicate way.</p>
         <a href="./pages/contact.html" class="btn">Make Appointment Now</a>
-      </div>
+      </article>
       <img class="header-img" src="./images/3-ways-your-toothbrush-could-be-making-you-sick-920x613.jpg"
-        alt="This is pic" height="350" width="800">
+        alt="This is pic">
     </section>
-  </header>
-  <main>
     <section class="sec1">
       <h1>Our Treatments</h1>
       <div class="flex box-container">
-        <div>
+        <figure>
           <img class="box" src="./images/1.jpg" alt="">
           <h4>Dental Implant</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit</figcaption>
           <a href="./pages/treatment1.html" class="btn">Read More</a>
-        </div>
-        <div>
+        </figure>
+        <figure>
           <img class="box" src="./images/2.jpg" alt="">
           <h4>Root Canel</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit</figcaption>
           <a class="btn">Read More</a>
-        </div>
-        <div>
+        </figure>
+        <figure>
           <img class="box" src="./images/4.jpg" alt="">
           <h4>Dental Bridge</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit</figcaption>
           <a class="btn">Read More</a>
-        </div>
-        <div>
+        </figure>
+        <figure>
           <img class="box" src="./images/3.jpg" alt="">
           <h4>Teeth whitening</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit</figcaption>
           <a class="btn">Read More</a>
-        </div>
+        </figure>
       </div>
     </section>
-    <section class="sec2 m-lr">
-      <div>
+    <section class="sec2">
+      <blockquote>
         <i class="fa-sharp fa-solid fa-quote-left icon"></i>
         <p class="pp"> Lorem ipsum dolor sit amet, consectetur
           adipiscing elit, sed do eiusmod tempor incididunt ut labore
           et dolore magna aliqua. Ut enim ad minim veniam.</p>
         <i class="fa-sharp fa-solid fa-quote-right icon"></i>
         <h5>Author</h5>
-      </div>
+      </blockquote>
     </section>
-    <section class="sec3 m-lr">
+    <section class="sec3">
       <div class="sign-up flex">
-        <div>
+        <blockquote>
           <h3>Call to Action! It´s time!</h3>
-          <div>Sign up for our product by clicking the button right over here</div>
-        </div>
+          <p>Sign up for our product by clicking the button right over here</p>
+        </blockquote>
         <a class="btn btn-2">Contact us</a>
       </div>
     </section>
   </main>
-  <footer class="m-lr footer-conainer">
+  <footer class="footer-conainer">
     <div class="footer">
       <div class="">
         <img src="./images/Logo.png" alt="Logo" height="80">
@@ -106,30 +103,30 @@
           <a href=""><i class="fa-brands fa-linkedin icon"></i></a>
         </div>
       </div>
-      <div class="colomn">
-        <h3>Treatments</h3>
-        <p>Teeth Whitening</p>
-        <p>Dental Bridge</p>
-        <p>Dental Implant</p>
-      </div>
-      <div class="colomn">
-        <h3>Contact us</h3>
-        <p><span><i class="fa-sharp fa-solid fa-location-dot icon icon-s"></i></span>Gustav III:s Boulevard 46, 169 73,
+      <dl class="colomn">
+        <dt>
+          <h3>Treatments</h3>
+        </dt>
+        <dd>Teeth Whitening</dd>
+        <dd>Dental Bridge</dd>
+        <dd>Dental Implant</dd>
+      </dl>
+      <dl class="colomn">
+        <dt>
+          <h3>Contact us</h3>
+        </dt>
+        <dd><span><i class="fa-sharp fa-solid fa-location-dot icon icon-s"></i></span>Gustav III:s Boulevard 46, 169 73,
           Solna
-        </p>
-        <p><span><i class="fa-solid fa-phone icon icon-s"></i></span>08-650-10-60, +46 (0) 70 544 41 29</p>
-        <p><span><i class="fa-solid fa-envelope icon icon-s"></i></span>info@dental.com</p>
-      </div>
+        </dd>
+        <dd><span><i class="fa-solid fa-phone icon icon-s"></i></span>08-650-10-60, +46 (0) 70 544 41 29</dd>
+        <dd><span><i class="fa-solid fa-envelope icon icon-s"></i></span>info@dental.com</dd>
+      </dl>
     </div>
     <hr>
     <div class="copyright">
       <i class="fa-solid fa-copyright icon icon-s"></i> 2022 Dental Clinic | All rights reserved | Data protection
     </div>
-
   </footer>
-
-
-
 </body>
 
 </html>

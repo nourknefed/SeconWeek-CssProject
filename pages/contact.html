@@ -12,79 +12,71 @@
 
 <body>
   <!-- header -->
-  <header class="container m-lr con-3">
+  <header class="container">
     <nav class="nav m-lr flex">
-      <div class="logo flex">
-        <img src="../images/Logo.png" alt="logo" height="80">
-        <a href="../index.html">Dental Studio</a>
-      </div>
-      <div class="nav-link flex">
-        <a href="../index.html">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn">Treatments</button>
-          <div class="dropdown-content">
-            <a href="./treatment1.html">Teeth whitening</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-        <a href="">Contact us</a>
-      </div>
-      </div>
+      <img src="../images/Logo.png" alt="logo" height="80">
+      <ul class="nav-link flex">
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <menu class="dropdown">
+            <button class="dropbtn">Treatments</button>
+            <ul class="dropdown-content">
+              <li><a href="treatment1.html">Dental implant</a></li>
+              <li><a href="#">Teeth whitening</a></li>
+              <li><a href="#">Root Canel</a></li>
+            </ul>
+          </menu>
+        </li>
+        <li><a href="./contact.html">Contact us</a></li>
+      </ul>
     </nav>
+  </header>
+  <main>
     <section class="page1-sec1">
-      <div> <a href="./index.html">Home</a> / Contact Us </div>
+      <p> <a href="../index.html">Home</a> / Contact Us </p>
       <img src="../images/Contact-us-at-Rosenberg-Interior-Technologists.jpg" alt="">
     </section>
-  </header>
-  <section class="page-3-sec1 m-lr">
-    <div>
-      <h1>Adress</h1>
-      <p><span><i class="fa-sharp fa-solid fa-location-dot icon icon-s"></i></span>Gustav III:s Boulevard 46, 169 73,
-      </p>
-      <p>Solna, Sweden</p>
-    </div>
-    <div>
-      <h1>Contact details</h1>
-      <p><span><i class="fa-solid fa-phone icon icon-s"></i></span>08-650-10-60, +46 (0) 70 544 41 29</p>
-      <p><span><i class="fa-solid fa-envelope icon icon-s"></i></span>info@dental.com</p>
-    </div>
-    <div>
-      <h1>Open Hours</h1>
-      <p>Mon-Fri ......... 9:00-18:00</p>
-      <p>Sat-Sun ......... Closed</p>
-    </div>
-  </section>
-
-  <section class="form m-lr">
-    <div class="col-1">
-      <h1>Contact Us</h1>
-      <p>For general questions, send us a message and we will respond to you as soon as we can. You can also call us
-        directly to
-        get help with your case.</p>
-    </div>
-
-    <form action="">
-      <label for="fname">First name:</label><br>
-      <input type="text" class="input" id="fname" name="fname"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" class="input" id="lname" name="lname"><br><br>
-      <label for="email">Email:</label><br>
-      <input type="text" class="input" id="email" name="email"><br><br>
-      <label for="lname">Message</label><br>
-      <textarea name="" class="input text" id="" cols="30" rows="10"></textarea>
-      <br>
-      <br>
-      <button class="btn">Send</button>
-    </form>
-
-
-
-  </section>
-
-
-
-  <footer class="m-lr footer-conainer">
+    <section class="page-3-sec1">
+      <div>
+        <h1>Adress</h1>
+        <p><span><i class="fa-sharp fa-solid fa-location-dot icon icon-s"></i></span>Gustav III:s Boulevard 46, 169 73,
+        </p>
+        <p>Solna, Sweden</p>
+      </div>
+      <div>
+        <h1>Contact details</h1>
+        <p><span><i class="fa-solid fa-phone icon icon-s"></i></span>08-650-10-60, +46 (0) 70 544 41 29</p>
+        <p><span><i class="fa-solid fa-envelope icon icon-s"></i></span>info@dental.com</p>
+      </div>
+      <div>
+        <h1>Open Hours</h1>
+        <p>Mon-Fri ......... 9:00-18:00</p>
+        <p>Sat-Sun ......... Closed</p>
+      </div>
+    </section>
+    <section class="form">
+      <blockquote class="col-1">
+        <h1>Contact Us</h1>
+        <p>For general questions, send us a message and we will respond to you as soon as we can. You can also call us
+          directly to
+          get help with your case.</p>
+      </blockquote>
+      <form action="">
+        <label for="fname">First name:</label><br>
+        <input type="text" class="input" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" class="input" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" class="input" id="email" name="email"><br><br>
+        <label for="lname">Message</label><br>
+        <textarea name="" class="input text" id="" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <button class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer-conainer">
     <div class="footer">
       <div class="">
         <img src="../images/Logo.png" alt="Logo" height="80">
@@ -94,20 +86,24 @@
           <a href=""><i class="fa-brands fa-linkedin icon"></i></a>
         </div>
       </div>
-      <div class="colomn">
-        <h3>Treatments</h3>
-        <p>Teeth Whitening</p>
-        <p>Dental Bridge</p>
-        <p>Dental Implant</p>
-      </div>
-      <div class="colomn">
-        <h3>Contact us</h3>
-        <p><span><i class="fa-sharp fa-solid fa-location-dot icon icon-s"></i></span>Gustav III:s Boulevard 46, 169 73,
+      <dl class="colomn">
+        <dt>
+          <h3>Treatments</h3>
+        </dt>
+        <dd>Teeth Whitening</dd>
+        <dd>Dental Bridge</dd>
+        <dd>Dental Implant</dd>
+      </dl>
+      <dl class="colomn">
+        <dt>
+          <h3>Contact us</h3>
+        </dt>
+        <dd><span><i class="fa-sharp fa-solid fa-location-dot icon icon-s"></i></span>Gustav III:s Boulevard 46, 169 73,
           Solna
-        </p>
-        <p><span><i class="fa-solid fa-phone icon icon-s"></i></span>08-650-10-60, +46 (0) 70 544 41 29</p>
-        <p><span><i class="fa-solid fa-envelope icon icon-s"></i></span>info@dental.com</p>
-      </div>
+        </dd>
+        <dd><span><i class="fa-solid fa-phone icon icon-s"></i></span>08-650-10-60, +46 (0) 70 544 41 29</dd>
+        <dd><span><i class="fa-solid fa-envelope icon icon-s"></i></span>info@dental.com</dd>
+      </dl>
     </div>
     <hr>
     <div class="copyright">

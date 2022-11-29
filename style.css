@@ -27,7 +27,6 @@
 
 .container {
   background-color: #1F2937;
-  height: 600px;
   color: #F9FAF8;
 }
 
@@ -57,6 +56,7 @@ a {
 
 .nav-link {
   margin-top: 10px;
+  padding: 0;
 }
 
 .dropbtn {
@@ -70,13 +70,16 @@ a {
 .dropdown {
   position: relative;
   display: inline-block;
+  padding: 0 5px;
 }
 
 .dropdown-content {
   display: none;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
   position: absolute;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -108,7 +111,9 @@ a {
 }
 
 .sec {
-  margin-top: 100px;
+  padding: 120px;
+  background-color: #1F2937;
+
 }
 
 .sec h1 {
@@ -122,19 +127,20 @@ a {
   background-color: gray;
   text-align: center;
   justify-items: center;
+  height: 350px;
+  margin-left: 100px;
+
 }
 
 .sec span {
   color: #3882f6;
+
 }
 
-.sec div {
-  padding-right: 50px;
-}
-
-.sec div p {
-  padding: 15px 0px;
+.sec p {
+  padding: 30px 0px;
   color: #F9FAF8;
+  line-height: 1.5;
 }
 
 .btn {
@@ -144,7 +150,7 @@ a {
   border-radius: 5px;
   color: #F9FAF8;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .sec1 {
@@ -165,14 +171,13 @@ a {
 }
 
 .box:hover {
-  width: 220px;
-  height: 220px;
   box-shadow: 8px 8px 3px lightblue;
 }
 
-.sec1 p {
+.sec1 figure figcaption {
   color: #1F2937;
-  margin: 10px 0px;
+  margin: 10px 20px;
+  margin-bottom: 20px;
 }
 
 .sec2 {
@@ -211,14 +216,15 @@ a {
 
 .sign-up {
   background-color: #3882f6;
-  padding: 40px 100px;
+  padding: 40px 200px;
   border-radius: 10px;
+  align-items: center;
 }
 
 .sign-up h3,
-.sign-up div {
+.sign-up p {
   color: #E5E7EB;
-  padding-right: 30px;
+  padding-right: 50px;
 }
 
 .btn-2 {
@@ -237,12 +243,16 @@ a {
   padding: 20px 0;
 }
 
+.colomn {
+  color: #F9FAF8;
+}
+
 .colomn h3 {
   color: #F9FAF8;
   padding: 20px 0;
 }
 
-.colomn p {
+.colomn dd {
   font-size: 14px;
   color: #d6d6d7;
   padding: 3px 0;
@@ -280,15 +290,13 @@ hr {
 }
 
 .page1-sec1 {
-  margin-top: 30px;
   text-align: center;
   margin-top: 0px 0px;
   background-color: #d6d6d7;
   text-align: start;
-  height: 250px;
 }
 
-.page1-sec1 div {
+.page1-sec1 p {
   padding: 20px;
 }
 
@@ -297,9 +305,6 @@ hr {
 
 }
 
-.page1-sec2 {
-  margin-top: 50px;
-}
 
 .page1-sec2 h1 {
   font-size: 36px;
@@ -380,12 +385,11 @@ hr {
 }
 
 .page-3-sec1 {
-  height: 350px;
   display: flex;
   justify-content: space-around;
   text-align: left;
   align-items: center;
-  margin-top: 50px;
+  margin: 60px 0;
 }
 
 .page-3-sec1 h1,
@@ -395,10 +399,11 @@ hr {
 
 .col-1 {
   width: 300px;
+  line-height: 1.5;
 }
 
 .col-1 h1 {
-  padding: px 0;
+  padding: 10px 0;
 }
 
 .form {
